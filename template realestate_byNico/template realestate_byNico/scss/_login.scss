@@ -1,0 +1,174 @@
+/* Login */
+/* Registration */
+/* .form-rows-mb{
+    margin-bottom: 0;
+  }
+  .form-rows-mt{
+    margin-top: 0;
+  } */
+.reg-top-bg {
+  background: $gray-300;
+  padding-top: 160px !important;
+}
+.reg-top-bg-mobile {
+  background: #006b04;
+  padding-top: 89.5px !important;
+  padding-bottom: 57px !important;
+  text-transform: uppercase;
+  color: $tertiary;
+}
+.reg-top-bg-mobile-dash {
+  background: $primary-700;
+  padding-top: 72.5px !important;
+  padding-bottom: 16px !important;
+  text-transform: uppercase;
+  color: $tertiary;
+}
+.caption-left-user {
+  color: $tertiary !important;
+}
+.center-div {
+  background-color: $gray-400;
+}
+.l-margin-icon {
+  margin-top: -26px;
+}
+.eye-pwd {
+  background: transparent;
+  border: 0;
+  color: $gray-800;
+  float: right;
+  margin-left: -37px;
+  margin-top: 11px;
+  position: absolute;
+  z-index: 2;
+}
+.cal-icon {
+  background: transparent;
+  border: 0;
+  color: $gray-600;
+  float: right;
+  margin-left: -37px;
+  margin-top: 11px;
+  position: absolute;
+  z-index: 2;
+}
+.file-icon {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  background: transparent;
+  border: 0;
+  color: $primary-500;
+  float: right;
+  margin-left: -37px;
+  margin-top: 11px;
+  position: absolute;
+  z-index: 2;
+}
+.caption-btn {
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: $gray-600;
+}
+#show_hide_password {
+  input {
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+  }
+}
+.date-icon {
+  input {
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+  }
+}
+.bottom-stripe {
+  background-color: $gray-500;
+  padding-top: 45px !important;
+}
+.login-btn {
+  margin-top: -16px;
+}
+.btn-bar {
+  margin-top: -23px;
+}
+.bottom-stripe-reg-cmp {
+  background-color: $gray-500;
+  padding-top: 45px !important;
+  margin-top: -61px !important;
+}
+.bottom-stripe-reg-pvt {
+  background-color: $gray-500;
+  padding-top: 45px !important;
+  margin-top: -61px !important;
+}
+
+.center-div-reg-cmp {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: $gray-400;
+}
+.margin-icon {
+  margin-top: -37px;
+}
+.create-acc-lbl {
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: $gray-600;
+  text-align: left !important;
+  text-transform: uppercase;
+}
+.border-input-reg {
+  padding-bottom: 20px;
+  border-bottom: 2px solid $gray-300;
+}
+.border-input-reg-top {
+  padding-top: 20px;
+  border-top: 2px solid $gray-300;
+}
+.add-socio {
+  i {
+    color: $tertiary;
+    background-color: $gray-700;
+    padding: 3px 4px;
+    border-radius: 9px;
+  }
+}
+.form-rows-mb {
+  margin-bottom: 20px;
+}
+.form-rows-mt {
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .login-btn {
+    margin-top: 28px;
+  }
+  .center-div {
+    margin-top: 150px !important;
+    margin-bottom: 300px !important;
+  }
+  .border-input-reg {
+    padding-bottom: 20px;
+    border-bottom: 2px solid $gray-300;
+  }
+  .bar-reg {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .mrg-pvt {
+    margin-bottom: 100px;
+  }
+}

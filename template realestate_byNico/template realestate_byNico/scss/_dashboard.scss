@@ -1,0 +1,175 @@
+.dash-light-blue {
+  background: $primary-400;
+}
+#header-dashboard {
+  margin-top: 114px;
+  padding: 25px 0;
+  background: $primary-400;
+
+  a {
+    font-size: 12px;
+    font-weight: bold;
+    color: $tertiary;
+    display: inline-block;
+    margin-left: 40px;
+    text-transform: uppercase;
+
+    &.active:after,
+    &:hover::after {
+      content: "";
+      display: block;
+      background: $primary-500;
+      width: 30px;
+      height: 4px;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+
+    &.btn-control {
+      color: $gray-700;
+
+      i {
+        margin-right: 10px;
+
+        &.i-danger {
+          color: $red;
+        }
+      }
+    }
+
+    &.btn:after {
+      display: none;
+    }
+  }
+}
+
+#header-dashboard-details {
+  margin-top: 0;
+  padding: 30px 0 40px 0;
+  background: $gray-300;
+
+  .dashbox {
+    margin: 0;
+    padding: 15px 0;
+    border-radius: 4px;
+    background: $tertiary;
+    box-shadow: 0 8px 16px 0 rgba(48, 49, 51, 0.1),
+      0 2px 4px 0 rgba(0, 0, 0, 0.19);
+
+    .db-icon {
+      width: 50px;
+      height: 50px;
+      background: $primary-500;
+      padding-top: 11px;
+      text-align: center;
+      border-radius: 4px;
+
+      i {
+        color: $tertiary;
+      }
+    }
+
+    h4 {
+      color: $primary-500;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    h5 {
+      font-size: 26px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: $gray-800;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.tbl {
+  th {
+    border: 0;
+    background: $primary-100;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 20px 15px;
+  }
+
+  td {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 20px 15px;
+  }
+}
+
+.investimento {
+  box-shadow: 0 8px 16px 0 rgba(48, 49, 51, 0.1);
+
+  .inv-box-det {
+    padding-top: 15px;
+  }
+
+  .inv-date {
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: $primary-500;
+    margin-top: 10px;
+  }
+
+  .inv-ritorno {
+    background: $gray-500;
+    padding: 15px 15px 40px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    color: $gray-800;
+  }
+}
+
+.inv-bold {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.investimento .inv-termine {
+  background: $primary-900;
+  padding: 5px 15px;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  color: $tertiary;
+  margin-bottom: 30px;
+}
+
+.cube-deposito {
+  font-size: 100px;
+  color: $primary-500;
+  margin-left: -20px;
+}
+
+.blue-price {
+  display: block;
+  color: $primary-500;
+}
+
+@media (max-width: 1200px) {
+  #header-dashboard {
+    margin-top: 60px !important;
+  }
+}
+@media (max-width: 1199px) {
+  #header-dashboard-details .dashbox {
+    margin-bottom: 20px;
+  }
+}

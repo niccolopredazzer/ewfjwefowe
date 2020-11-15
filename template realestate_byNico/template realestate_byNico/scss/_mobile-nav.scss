@@ -1,0 +1,39 @@
+/* Mobile Navigation */
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: $primary-700;
+  height: 500px;
+  color: $tertiary;
+  border-radius: 10px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: $gray-700;
+  position: relative;
+  #myLinks {
+    display: none;
+  }
+  a {
+    color: $gray-300;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    &:hover {
+      background-color: $gray-300;
+      color: $black;
+    }
+  }
+  a.icon {
+    background: $black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+.active {
+  background-color: $green-700;
+  color: $tertiary;
+}

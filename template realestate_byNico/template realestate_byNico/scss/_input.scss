@@ -1,0 +1,340 @@
+/* Input */
+/*File*/
+/*Toggle Switch*/
+/* Hide default HTML checkbox */
+/* The slider */
+/* Rounded sliders */
+input {
+  border-radius: 4px;
+  box-shadow: none !important;
+  font-size: 15px;
+  font-weight: 600;
+  &:checked {
+    + {
+      .toggle-slider {
+        background-color: $green;
+
+        &:before {
+          -webkit-transform: translateX(26px);
+          -ms-transform: translateX(26px);
+          transform: translateX(26px);
+          font-family: "missing-tech";
+          content: "\e80f";
+          color: $green;
+          text-align: center;
+          font-size: 12px;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+  &:focus {
+    + {
+      .toggle-slider {
+        box-shadow: 0 0 1px $green;
+      }
+    }
+  }
+}
+.tx-input {
+  border: solid 1px $gray-400;
+  background-color: $gray-200;
+  padding: 10px 12px 10px 12px !important;
+  &:hover {
+    background-color: $gray-300;
+    border: solid 1px $gray-400;
+  }
+  &:disabled {
+    border: solid 1px $gray-400;
+    background-color: $gray-200;
+    height: 46px;
+    &::placeholder {
+      color: $gray-600;
+    }
+  }
+  &:focus {
+    &::placeholder {
+      font-family: $font-family-open-sans;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+    }
+  }
+  &::placeholder {
+    font-family: $font-family-open-sans;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    margin-bottom: 1px;
+  }
+}
+.tx-input.focus {
+  background-color: $gray-200;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: $font-family-open-sans;
+}
+.input-primary {
+  &:focus {
+    border: solid 1px $primary-700;
+  }
+}
+.input-warning {
+  &:focus {
+    border: solid 1px $yellow;
+  }
+}
+.input-danger {
+  &:focus {
+    border: solid 1px $red;
+  }
+}
+.input-info {
+  &:focus {
+    border: solid 1px $info-500;
+  }
+}
+.input-success {
+  &:focus {
+    border: solid 1px $green;
+  }
+}
+//Error
+.input-error {
+  border: solid 1px $red;
+}
+#newsText {
+  font-family: $font-family-open-sans;
+  text-transform: uppercase;
+  font-size: 12px;
+  a {
+    text-decoration: underline;
+    color: $tertiary;
+    &:hover {
+      text-decoration: underline;
+      color: $tertiary;
+    }
+  }
+}
+input[type="file"] {
+  display: none;
+}
+.file-upload {
+  border-radius: 4px !important;
+  border: solid 1px $gray-400;
+  background-color: $gray-200;
+  display: inline-block;
+  padding: 10px 12px;
+  cursor: pointer;
+  width: 100%;
+}
+.toggle_switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $gray-600;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  &:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: $tertiary;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
+.toggle-slider.rounder {
+  border-radius: 34px;
+  &:before {
+    border-radius: 50%;
+  }
+}
+select {
+  border-radius: 4px;
+  box-shadow: none !important;
+  font-size: 15px;
+  font-weight: 600;
+  + {
+    i.fa {
+      float: right;
+      margin-top: -32px;
+      margin-right: 5px;
+      pointer-events: none;
+      padding-right: 5px;
+      color: $gray-600;
+      font-size: 12px;
+    }
+    i.mt-down-arrow {
+      float: right;
+      margin-top: -35px;
+      margin-right: 5px;
+      pointer-events: none;
+      padding-right: 5px;
+      color: $tertiary;
+      font-size: 12px;
+    }
+    i.mt-check-filled {
+      float: left;
+      margin-top: -35px;
+      margin-right: 5px;
+      pointer-events: none;
+      padding-right: 5px;
+      font-size: 13px;
+      color: $green;
+    }
+  }
+}
+.tx-select {
+  border: solid 1px $gray-400;
+  background-color: $gray-200;
+  height: 46px !important;
+  &:hover {
+    background-color: $gray-300;
+    border: solid 1px $gray-400;
+  }
+  &:disabled {
+    border: solid 1px $gray-400;
+    background-color: #fcfdfe;
+    height: 46px;
+    &::placeholder {
+      color: $gray-600;
+    }
+  }
+  &:focus {
+    &::placeholder {
+      font-family: $font-family-open-sans;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+    }
+  }
+  &::placeholder {
+    font-family: $font-family-open-sans;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+  }
+}
+.tx-select.focus {
+  background-color: $gray-400;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: $font-family-open-sans;
+}
+.my-resp {
+  margin: 15px 0;
+}
+.resp-select {
+  border: solid 1px #001907;
+  background-color: #001907;
+  height: 46px;
+  color: $tertiary;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2.1;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  padding: 0.375rem 0.75rem;
+  &:hover {
+    background-color: #001907;
+    border: solid 1px #001907;
+  }
+  &:disabled {
+    border: solid 1px $gray-400;
+    background-color: $gray-200;
+    height: 46px;
+    &::placeholder {
+      color: $gray-600;
+    }
+  }
+  &:focus {
+    &::placeholder {
+      font-family: $font-family-open-sans;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+    }
+  }
+  &::placeholder {
+    font-family: $font-family-open-sans;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    text-transform: uppercase;
+    color: $tertiary;
+  }
+}
+.resp-select:focus {
+  color: $tertiary;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2.1;
+  font-size: 16px;
+}
+
+select.input-md {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+textarea.tx-input {
+  box-shadow: none !important;
+  font-size: 15px;
+  color: $gray-600;
+  padding: 10px 10px !important;
+  height: 140px;
+}
+
+::placeholder {
+  padding-top: 2px;
+}
+
+:-ms-input-placeholder {
+  padding-top: 2px;
+}
+
+::-ms-input-placeholder {
+  padding-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .tx-input {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .resp-select {
+    display: none;
+  }
+}

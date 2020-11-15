@@ -1,0 +1,128 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/* User Header Menu */
+/* Media Queries */
+#header {
+  height: 80px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  .logo {
+    h1 {
+      font-size: 36px;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      a {
+        color: #00366f;
+        text-decoration: none;
+        &:hover {
+          color: #00366f;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .btn-small {
+    span {
+      vertical-align: bottom;
+    }
+  }
+}
+.logotop {
+  max-width: 255px;
+}
+#header.header-scrolled {
+  > .middle-bar {
+    color: $tertiary;
+    background-color: #001907;
+    height: 100%;
+    max-height: 70px;
+    background-image: none;
+  }
+  .logotop {
+    max-height: 46px;
+  }
+  .main-nav {
+    margin-top: -4px;
+  }
+}
+#envbtn {
+  color: $gray-700 !important;
+  margin-top: 10px;
+  margin-left: 14px;
+}
+.mobile-nav {
+  #envbtn {
+    margin-top: 0;
+    margin-left: 0;
+    line-height: 1.33;
+  }
+}
+.under-menu-mobi {
+  left: 10px;
+  width: 96% !important;
+}
+.user-icon-menu {
+  color: $primary-900;
+  background: $tertiary;
+  border-radius: 4px;
+  padding: 5px 4px;
+  font-size: 9px;
+}
+.main-pages {
+  margin-top: 60px;
+}
+.dropdown-toggle {
+  &::after {
+    display: none;
+  }
+}
+.user-drop {
+  background: $primary-900 !important;
+  color: $tertiary !important;
+}
+.user-drop-mobi {
+  background: transparent !important;
+  color: $tertiary !important;
+}
+.user-drop-mobile {
+  &:after {
+    content: "";
+    display: block;
+    height: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    margin-top: 19px;
+  }
+  background: $gray-800 !important;
+  color: $tertiary !important;
+}
+.user-icon {
+  color: $primary-900;
+  background: $tertiary;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 9px;
+}
+.user-icon-mobile {
+  color: $primary-900;
+  background: $tertiary;
+  border-radius: 4px;
+  padding: 4px !important;
+  font-size: 12px;
+}
+.user-dark {
+  color: $primary-900;
+}
+.diff-social {
+  margin-top: 2px !important;
+}
+@media (max-width: 767px) {
+  .logotop {
+    max-width: 200px;
+  }
+}

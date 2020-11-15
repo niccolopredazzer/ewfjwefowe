@@ -1,0 +1,203 @@
+/* Middle Bar */
+
+.btn {
+  font-family: $font-family-open-sans;
+}
+
+/* Btn size */
+
+.btn-giant {
+  font-size: 18px;
+  line-height: 2.3;
+}
+
+.btn-large {
+  line-height: 2.1;
+  font-size: 16px;
+}
+
+.btn-medium,
+.btn-icon-medium {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.btn-small {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.btn-tiny {
+  font-size: 10px !important;
+  line-height: 1;
+  background-color: white;
+  &:hover {
+    background-color: transparent;
+  }
+}
+.btn-tiny span {
+  color: black;
+  &:hover {
+    color: #fff;
+  }
+}
+.btn-tiny .mobile-span {
+  color: white;
+}
+.bottone-user span {
+  color: white;
+}
+#dropdown-menu-button {
+  background-color: #fff;
+}
+/* Button colors */
+
+.btn-primary {
+  color: #2e3a59;
+  background-color: #fff;
+  border-color: #2e3a59;
+  &:hover {
+    background-color: #06a606;
+    color: #fff;
+  }
+  &:focus {
+    background-color: #06a606;
+    color: #fff;
+  }
+}
+.my-btn-primary {
+  color: #fff;
+  background-color: #06a606;
+  &:hover {
+    background-color: #06a606;
+    color: #fff;
+  }
+  &:focus {
+    background-color: #06a606;
+  }
+}
+
+.btn-control {
+  background-color: #fff;
+  color: #2e3a59;
+  &:hover {
+    color: #fff;
+    background-color: #06a606;
+  }
+}
+
+.btn-basic {
+  background-color: $gray-300;
+  border-color: $gray-300;
+}
+
+.btn-control {
+  background-color: #fff;
+  color: $gray-700;
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(247, 249, 252, 0.25) !important;
+  }
+  &:hover {
+    background-color: #00e100;
+    color: #fff;
+  }
+}
+
+.bottone-homepage {
+  background-color: #006b04;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+.bottone-user {
+  background-color: #fff;
+  color: #2e3a59;
+  &:hover {
+    background-color: #06a606;
+    color: #2e3a59;
+  }
+}
+
+.btn-group {
+  box-shadow: 0 8px 16px 0 rgba(48, 49, 51, 0.1);
+}
+
+.btn-grey {
+  background-color: $gray-600;
+  color: $tertiary;
+
+  &:hover {
+    color: $tertiary;
+  }
+
+  i {
+    color: $gray-500;
+  }
+}
+
+.btn-doc {
+  background-color: $primary-100;
+  border-color: $primary-100;
+  color: $primary-500;
+  font-size: 14px;
+  padding: 8px 20px;
+  margin-bottom: 8px;
+
+  span {
+    color: $black;
+  }
+
+  &:hover {
+    background-color: $primary-500;
+    color: $tertiary;
+
+    span {
+      color: $tertiary;
+    }
+  }
+}
+/* Button Outline */
+
+.btn-outline-light {
+  line-height: 1.2;
+  font-size: 10px;
+}
+
+.btn-ghost-primary {
+  font-size: 14px;
+  font-weight: bold;
+  color: $gray-700;
+  background-color: $tertiary;
+  border: 0.5px solid #e4e9f2;
+
+  &:hover {
+    background-color: #06a606;
+    border-color: #06a606;
+    color: $tertiary;
+  }
+
+  &.active {
+    background-color: $gray-300;
+    text-transform: none;
+  }
+
+  &.focus {
+    background-color: $gray-300;
+    box-shadow: 0 0 0 0.2rem rgba(247, 249, 252, 0.25) !important;
+    border: solid 1px $gray-600;
+    text-transform: none;
+  }
+
+  &.disabled {
+    background-color: $gray-300;
+    box-shadow: 0 0 0 0.2rem rgba(247, 249, 252, 0.25) !important;
+    text-transform: none;
+  }
+}
+@media (max-width: 1100px) {
+  .my-iscriviti-div {
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,110 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+/* Top Footer Section */
+/* Middle Footer Section */
+/* Footer White */
+/* Footer Bottom */
+/* General */
+#footer {
+  padding: 0;
+  color: $tertiary;
+  font-size: 14px;
+  font-family: $font-family-open-sans;
+  h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .footer-top {
+    background: #001907;
+    padding: 60px 0 30px 0;
+    h5 {
+      color: $tertiary;
+    }
+  }
+  .footer-middle {
+    background-color: black;
+    padding: 30px 0;
+    img {
+      display: inline-block;
+      margin: 0 7px;
+    }
+  }
+  .footer-white {
+    background-color: $tertiary;
+    padding: 40px 0 90px 0;
+    color: $gray-800;
+    h6 {
+      font-weight: bold;
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+  }
+  .footer-bottom {
+    background-color: #006b04;
+    padding: 40px 0;
+  }
+}
+.nl-ttl {
+  margin-top: -10px;
+}
+.nw-icon {
+  font-size: 48px;
+  vertical-align: middle;
+}
+.sub-ft-btn {
+  font-size: 16px;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+.pay-wt {
+  font-weight: 600;
+}
+.ft-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ft-block {
+  line-height: 1.4;
+}
+.ft-bottom {
+  font-size: 13px;
+  font-family: $font-family-open-sans;
+  line-height: 1.33;
+}
+.bottom-logo {
+  margin-bottom: 13px;
+  max-width: 255px;
+}
+@media (max-width: 768px) {
+  #footer {
+    .footer-top {
+      h3 {
+        font-size: 22px;
+      }
+      padding: 10px 0 10px 0;
+    }
+    .footer-white {
+      padding: 40px 0 10px 0;
+    }
+    .footer-middle {
+      img {
+        max-width: 47px;
+        margin-top: 14px;
+      }
+    }
+  }
+  .lemonway {
+    max-width: 135px;
+    margin: 20px auto;
+  }
+  .ft-block {
+    margin-bottom: 29px;
+  }
+  .nw-icon {
+    font-size: 41px;
+  }
+}

@@ -1,0 +1,64 @@
+.blue-logos {
+  max-width: 110px;
+  max-height: 25px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+// .blue-screen{
+//     max-width: 500px;
+// }
+.section-bg-dark {
+  background: #c5f2c5;
+}
+.section-bg-dark h1,
+.section-bg-dark h2,
+.section-bg-dark h3,
+.section-bg-dark p {
+  color: #2e3a59;
+}
+.section-bg-dark .stars-icon {
+  color: #006b04;
+  border: 1px solid $tertiary;
+  background: $tertiary;
+}
+.section-bg-dark .s1serv {
+  color: $primary-500;
+}
+.chart-sec .stars-icon {
+  background: $primary-500;
+  border: 1px solid $primary-500;
+  color: $tertiary;
+}
+.light-sec {
+  background: #c5f2c5;
+}
+.light-sec .stars-icon {
+  background: $primary-500;
+  border: 1px solid $primary-500;
+  color: $tertiary;
+}
+
+.light-sec-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#services-btm {
+  padding: 60px 0 40px 0;
+}
+.card-header a:hover {
+  color: #001907;
+}
+@media (max-width: 767px) {
+  .light-sec-img,
+  .blue-screen {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #services-btm {
+    padding: 30px;
+  }
+  .blue-logos {
+    margin-right: 11px;
+  }
+}

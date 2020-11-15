@@ -1,0 +1,41 @@
+.form-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  background-color: $gray-300;
+  color: $tertiary;
+  top: -5px;
+  height: 18px;
+  width: 18px;
+  border: 1px solid $primary-500;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 7px;
+  outline: none;
+  transform: scale(0.8) !important;
+}
+.form-radio:hover {
+  background-color: $gray-500;
+}
+.form-radio:checked {
+  background-color: $primary-500;
+  border: 0;
+}
+.form-radio:checked::before {
+  position: absolute;
+  font-family: "missing-tech";
+  left: 2px;
+  content: "\e80f";
+  font-size: 10px;
+  top: 1.5px;
+}
+.form-radio:checked:hover {
+  background-color: $primary-400;
+}
+label.caption {
+  line-height: 2;
+  vertical-align: top;
+  margin-top: -7px;
+}

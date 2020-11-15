@@ -1,0 +1,119 @@
+/* General */
+/* Registration Modal */
+/* Registration Modal */
+/* Depot */
+.modal-body {
+  margin: 0px -1px;
+}
+
+.modal-backdrop {
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 8px 16px 0 $mdl-backdrop;
+  background-color: $backdrop-default-bg;
+}
+#reg-modal {
+  .modal-content {
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+  }
+  .bottom-login {
+    background: $gray-500;
+    padding: 36px 0 46px 55px;
+    margin-bottom: -16px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+#res-pwd {
+  .modal-content {
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+  }
+}
+.confbtn {
+  color: $green;
+}
+.dpt-href {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: $gray-600;
+  padding: 16px;
+  text-transform: uppercase;
+  &:focus {
+    color: $primary-500;
+    border-bottom: 4px solid $primary-500;
+    border-radius: 1px;
+  }
+}
+.wrap-mod {
+  border-top: 1px solid $primary-900;
+  border-bottom: 1px solid $primary-900;
+  background-color: $gray-400;
+}
+.btm-depot {
+  background-color: $gray-500;
+}
+.pad-depot {
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-bottom: 0px;
+}
+
+.inv-dark-mod {
+  background: #001907;
+  color: $tertiary !important;
+}
+.inv-dark-mod h3,
+.inv-dark-mod h6 {
+  color: $tertiary !important;
+}
+.inv-dark-mod h3 > small {
+  font-size: 15px;
+}
+.flex-deal-dark {
+  display: flex;
+  align-items: center;
+}
+.chk-borders-deal-modal {
+  border-bottom: solid 1px $primary-900;
+  padding-bottom: 10px;
+}
+.chk-borders-deal-modal-top {
+  border-top: solid 1px $primary-900;
+  padding-top: 10px;
+}
+.grey-modal-deal {
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: $gray-600;
+}
+
+@media only screen and (max-width: 767px) {
+  #reg-modal {
+    .bottom-login {
+      text-align: center;
+      padding: 46px 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #inv-now .bottom-login {
+    margin-bottom: 20px;
+  }
+  #conf-invest .bottom-login {
+    margin-bottom: 20px;
+  }
+}
